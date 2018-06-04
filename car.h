@@ -1,15 +1,23 @@
 class Car{
 private:
+  // つぎのタイムステップでの加速度
+  double acceleration;
   // 現在の速度
-  int velocity;
+  double velocity;
   // x座標
-  int x;
+  double x;
   // xの移動量
-  int dx;
+  double dx;
+
 
 public:
   // コンストラクタの宣言
-  Car(int);
-  // 速度を決定する関数
+  Car(double velocity);
+  // 加速度を決定する関数
   void accelerate();
+
+  void run();
+
+
+
 };

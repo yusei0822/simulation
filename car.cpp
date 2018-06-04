@@ -1,13 +1,19 @@
 #include "car.h"
 
+extern deltaT;
+
 Car::Car()
 {
 }
 
 void Car::accelerate(){
-  dx = 1;
-// 移動量を加算
-   x += dx;
+  acceleration = 1;
 
-// 移動量の変更
+}
+
+void Car::run(){
+
+  velocity += acceleration * deltaT;
+
+  x =
 }
