@@ -4,10 +4,10 @@ Car::Car()
 {
 }
 
-void Car::move(){
+void Car::accelerate(){
+  dx = 1;
 // 移動量を加算
    x += dx;
-   y += dy;
 
 // 移動量の変更
 }
