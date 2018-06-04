@@ -1,4 +1,4 @@
-class Car{
+class CAR{
 private:
   // つぎのタイムステップでの加速度
   double acceleration;
@@ -12,7 +12,7 @@ private:
 
 public:
   // コンストラクタの宣言
-  Car(double velocity);
+  // CAR();
   // 加速度を決定する関数
   void accelerate();
 

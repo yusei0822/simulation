@@ -1,19 +1,19 @@
 #include "car.h"
 
-extern deltaT;
+extern double deltaT;
 
-Car::Car()
-{
-}
+// CAR()
+// {
+// }
 
-void Car::accelerate(){
+void CAR::accelerate(){
   acceleration = 1;
 
 }
 
-void Car::run(){
+void CAR::run(){
 
   velocity += acceleration * deltaT;
 
-  x =
+
 }
