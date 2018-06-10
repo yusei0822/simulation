@@ -12,7 +12,7 @@
 using namespace std;
 
 extern double PresentTime;
-extern double deltaT;
+extern double TimeStep;
 
 //再描画
 static void redrawView();
@@ -129,7 +129,7 @@ void GENERATE_CAR()
 //一つのタイムステップ
 void idleEvent()
 {
-  PresentTime += deltaT;
+  PresentTime += TimeStep;
 
   int P=rand();
   if((int)P%2 == 0 && (int)(PresentTime*10)%20 == 0)
